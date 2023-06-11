@@ -8,6 +8,9 @@ const User = {
 const useObj = ({ name: string, age: number, isMarried: boolean }) => { }
 let Newobj = { name: "ahmat", age: 26, isMarried: true, email: "randywande@gmail.com" }
 
+
+
+//  func for return typ
 const getObj = ({ name: string, age: number }):{} => {
     return {
         name: "ahmat",
@@ -16,5 +19,13 @@ const getObj = ({ name: string, age: number }):{} => {
 }
 
 
+type User = {
+    name: string,
+    age: number
+}
+const createPost = (user: User) => {
+    return {name: "", age: ''}
+}
 
-useObj(Newobj)
+createPost({name: "randy", age: 23})
+
