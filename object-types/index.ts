@@ -1,15 +1,3 @@
-// interface Person {
-//   name: string;
-//   age: number;
-// }
-
-type Person = {
-  name: string;
-  age: number;
-  address?: string;
-  marriage?: boolean;
-};
-
 interface Colorful {
   color: string;
 }
@@ -19,12 +7,11 @@ interface Circle {
 
 type ColorfulCircle = Colorful & Circle;
 
-const greet = (person: Person) => `hello ${person?.name}`;
-console.log(greet({ name: "rand", age: 2 }));
+const Greet = (colors: ColorfulCircle) => `hello ${colors.color}`;
 
-function draw(circle: Colorful & Circle) {
-  console.log(`Color was ${circle.color}`);
+function Draw(circle: ColorfulCircle) {
+  console.log(`Color was ${circle.radius}`);
   console.log(`Radius was ${circle.radius}`);
 }
-
-draw({ color: "red", radius: 90 });
+console.log(Greet({ color: "rand", radius: 2 }));
+console.log(Draw({ color: "red", radius: 90 }));
