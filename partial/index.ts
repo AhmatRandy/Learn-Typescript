@@ -25,7 +25,7 @@ const Todos2: TodoPreview2 = {
 };
 
 const user: Partial<Users> = {
-  name: "randy",
+  name: "Awdawd",
 };
 
 console.log(user);
