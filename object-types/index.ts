@@ -10,7 +10,7 @@ type ColorfulCircle = Colorful & Circle;
 const Greet = (colors: ColorfulCircle) => `hello ${colors.color}`;
 
 function Draw(circle: ColorfulCircle) {
-  console.log(`Color was ${circle.radius}`);
+  console.log(`Color was ${circle.color}`);
   console.log(`Radius was ${circle.radius}`);
 }
 console.log(Greet({ color: "rand", radius: 2 }));

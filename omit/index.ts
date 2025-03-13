@@ -4,8 +4,9 @@ interface Todo {
   completed: boolean;
 }
 
-type TodoPreview1 = Omit<Todo, "completed" | "title">;
+type TodoPreview1 = Omit<Todo, "tasks">;
 
 const todos: TodoPreview1 = {
   title: "hello",
+  completed: false,
 };
